@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://kit.fontawesome.com/ea6d4fec5e.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+		*{
+			margin:0%;
+			/*border:1px solid red;*/
+		}
+		.navbar{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding-right:1%;
+		}
+		.navbar a{
+			text-decoration: none;
+			color:black;
+			margin-left:2%;
+			font-weight:bold;
+			font-family: sans-serif;
+		}
+		.links{
+			width:45%;
+		}
+		.book{
+			background-color: red;
+			color: white;
+			border:none;
+			padding:1.8%;
+			cursor: pointer;
+			border-radius:5px;
+		}
+		.section2{
+			color:white;
+			text-align: center;
+			background-image: url("images/car.jpg");
+			background-repeat: no-repeat;
+			background-size: contain;
+			min-height: 80vh;
+			padding:14% 0% 8% 0%;
+		}
+		.make-car{
+			font-size: 2.7em;
+			margin:3% 0% 2% 0%;
+			font-family: sans-serif;
+		}
+		.view{
+			background-color: black;
+			color: white;
+			border:none;
+			margin-top:1%;
+			cursor: pointer;
+			padding:1%;
+			margin-top: 5%;
+			border-radius:5px;
+		}
+		.section3{
+			padding:0% 5%;
+		}
+		.why{
+			color:red;
+			font-family: sans-serif;
+			font-size:2em;
+			margin-bottom: 1%;	
+		}
+		.services{
+			display: flex;
+			margin-top: 3%;
+			
+			justify-content: space-around;
+		}
+		.services div{
+			text-align: center;
+			border:1px solid rgba(0,0,0,0.3);
+			width:25%;
+			padding:2%;
+			border-radius:10px ;
+		} 
+		.section4{
+			padding: 0% 5%;
+			margin-top: 1%;
+			margin-bottom: 4%;
+		}
+		.section4-div1{
+			display: flex;
+			justify-content: space-evenly;
+			margin-top: 3%;
+		}
+		.section4-div1 div{
+			box-shadow: 1px 4px 8px rgba(0,0,0,0.5);
+			border-radius: 18px;
+			width:20%;
+			margin-right:2%;
+			padding: 2%;
+		}
+		.section4-div1 a{
+			color:red;
+			text-decoration: none;
+		}
+		.section4-div1 i{
+			border:1px solid red;
+			border-radius: 50%;
+			padding: 1%;
+			font-size: 0.6rem;
+		}
+		.payment{
+			display: flex;
+			justify-content: space-between;
+			padding: 0% 5%;
+		}
+		.payment div{
+			width: 50%;
+		}
+		.pay-now{
+			color: white;
+			background-color: red;
+			padding: 1.6%;
+			margin-top: 1%;
+			width: 16%;
+			border-radius: 10px;
+			border: none;
+			cursor: pointer;
+		}
+		.payment>img{
+			width:20%;
+		}
+		.footer{
+			padding: 2%;
+			background-color: black;
+			text-align: center;
+		}
+		.footer a{
+			color:white;
+		}
+		.footer i{
+			font-size: 1.7rem;
+			margin-left: 3%;
+		}
+		@media (max-width:992px){
+			.navbar a{
+				font-size: 0.7rem;
+			}
+			
+		}
+		@media (max-width:768px){
+			.navbar a{
+				font-size: 0.6rem;
+			}
+			.book{
+				font-size: 0.6rem;
+			}
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar">
+		<img src="images/logo.jpg" alt="logo" width="13%"/>
+		<div class="links">
+			<a href="#">Home</a>
+			<a href="#">Explore</a>
+			<a href="#">Contact Us</a>
+			<a href="#">Payment</a>
+			<a href="#">
+				<button class="book">Book Appointment</button>
+			</a>
+		</div>
+	</nav>
+	<section class="section2">
+		<h1 class="make-car">Make Your car Customized</h1>
+		<p>Better & Faster</p>
+		<button class="view">View our Customization</button>
+	</section>
+	<section class="section3">
+		<h1 class="why">Why Autosport?</h1>
+		<p>We prefer to make Customization as our Customer's Perception & Choice</p>
+		<div class="services">
+			<div>
+				<img src="images/premium.png" alt="premium" width="20%"/>
+				<h2>Premium Quality</h2>
+				<p>We only use premium quality products to customize your cars</p>
+			</div>
+			<div>
+				<img src="images/best-service.jpg" alt="best" width="20%"/>
+				<h2>Premium Quality</h2>
+				<p>We only use premium quality products to customize your cars</p>
+			</div>
+			<div>
+				<img src="images/specialoffer.png" alt="special" width="20%"/>
+				<h2>Premium Quality</h2>
+				<p>We only use premium quality products to customize your cars</p>
+			</div>
+		</div>
+	</section>
+	<section class="section4">
+		<h1>Explore our Customization kits</h1>
+		<div class="section4-div1">
+			<div>
+				<img src="images/one.jpg" alt="spoilers" width="85%"/><br/>
+				<h2>Spoilers</h2>
+				<a href="">viewmore <i class="fa-solid fa-arrow-right"></i></a>
+			</div>
+			<div>
+				<img src="images/two.jpg" alt="windows tint" width="85%"/><br/>
+				<h2>Windows Tint</h2>
+				<a href="">viewmore <i class="fa-solid fa-arrow-right"></i></a>
+			</div>
+			<div>
+				<img src="images/three.jpg" alt="roof scoops" width="85%"/><br/>
+				<h2>Roof Scoops</h2>
+				<a href="">viewmore <i class="fa-solid fa-arrow-right"></i></a>
+			</div>
+			<div>
+				<img src="images/four.jpg" alt="tiers" width="85%"/><br/>
+				<h2>Tiers</h2>
+				<a href="">viewmore <i class="fa-solid fa-arrow-right"></i></a>
+			</div>
+		</div>
+		<div class="section4-div1">
+			<div>
+				<img src="images/five.webp" alt="spoilers" width="85%"/><br/>
+				<h2>Spoilers</h2>
+				<a href="">viewmore <i class="fa-solid fa-arrow-right"></i></a>
+			</div>
+			<div>
+				<img src="images/six.webp" alt="windows tint" width="85%"/><br/>
+				<h2>Windows Tint</h2>
+				<a href="">viewmore <i class="fa-solid fa-arrow-right"></i></a>
+			</div>
+			<div>
+				<img src="images/seven.jpg" alt="roof scoops" width="85%"/><br/>
+				<h2>Roof Scoops</h2>
+				<a href="">viewmore <i class="fa-solid fa-arrow-right"></i></a>
+			</div>
+			<div>
+				<img src="images/eight.webp" alt="tiers" width="85%"/><br/>
+				<h2>Tiers</h2>
+				<a href="">viewmore <i class="fa-solid fa-arrow-right"></i></a>
+			</div>
+		</div>
+	</section>
+	<section class="payment">
+		<div>
+			<h1>Payment</h1>
+			<p>Enjoy hassle-free payment with the pletitude of payment options available for you. Also you will get  a 10% discount on every order every time you pay online</p>
+			<button class="pay-now">Pay now</button><br/>
+			<img src="images/payment.png" width="50%" alt="payment options"/>
+		</div>
+		<img src="images/discount.png"  alt="discount"/>
+	</section>
+	<footer class="footer">
+		<a href=""><i class="fa-brands fa-instagram"></i></a>
+		<a target="_blank" href="https://api.whatsapp.com/send?phone=916301341478"><i class="fa-brands fa-whatsapp"></i></a>
+		<a href=""><i class="fa-brands fa-linkedin"></i></a>
+	</footer>
+</body>
+</html>
